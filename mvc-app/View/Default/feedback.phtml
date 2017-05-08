@@ -1,8 +1,10 @@
-<h1>Feedback</h1>
 
-<form method='post'>
-    <input type="text" name="author" value="<?=$form->author ?>"/><br>
-    <input type="email" name="email" value="<?=$form->email ?>"/><br>
-    <textarea name="message"><?=$form->message ?></textarea><br>
-    <button>Go</button>
+<div class="container">
+<form method='post'  >
+    <h1>Feedback</h1>
+    <input type="text" class="form-control" placeholder="Author" name="author"  value="<?=$form->author ?>"/><br>
+    <input type="email"  class="form-control" placeholder="Email address"  value="<?=$form->email ?>"/><br>
+    <textarea name="message" class="form-control" placeholder="Your feedback"><?=$form->message ?></textarea><br>
+    <button class="btn btn-lg btn-primary btn-block">Go</button>
 </form>
+</div>
